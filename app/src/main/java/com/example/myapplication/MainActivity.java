@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void transformCurrencyUSD(View view) {
-        float eur = Integer.parseInt(textInput.getText().toString());
+        float eur = Float.parseFloat(textInput.getText().toString());
         String number = String.format("$%.2f", eur * 1.05);
         textOutput.setText(number);
     }
 
     public void transformCurrencyGDP(View view) {
-        float eur = Integer.parseInt(textInput.getText().toString());
+        float eur = Float.parseFloat(textInput.getText().toString());
         String number = String.format("£%.2f", eur * 0.83);
         textOutput.setText(number);
     }
